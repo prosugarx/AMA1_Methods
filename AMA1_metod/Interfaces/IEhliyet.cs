@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AMA1_Methods.Classes
+namespace AMA1_metod.Interfaces
 {
-    internal class İnsan
+    public interface IEhliyet
     {
+        void ehliyet(string isism);
     }
 }

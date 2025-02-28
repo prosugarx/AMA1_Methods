@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AMA1_metod.Classes;
+using AMA1_metod.ŞirketÇalışanMaaşları;
 
 Console.WriteLine("Hello, World!");
 
@@ -49,13 +50,34 @@ k.name = "hakan ";
 k.surname = "yılmaz ";
 k.durum="akıllı";
 k.cocukYazdırma(k.name,k.surname,k.durum);
+k.asker(k.name);
+k.kulüp(k.name);
+k.ehliyet(k.name);
 
 UsluCocuk u = new UsluCocuk();
 u.cocukYazdırma("mehmet " , "yıldız " , "uslu");
+u.asker(u.name);
+u.ehliyet(u.name);
+
 
 TOGG o = new TOGG();
 o.vites("togg ", "otomatik vites");
 
 Audi d = new Audi();
 d.vites("audi ", "düz vites");
+
+Genel_Müdür g =new Genel_Müdür();
+Müdür ü = new Müdür();
+Programcı z =new Programcı();
+Stajyer j =new Stajyer();
+
+
+double ToplamMaaş = 0.0;
+ToplamMaaş += g.maasinizNedir();
+ToplamMaaş += z.maasinizNedir();
+ToplamMaaş += ü.maasinizNedir();
+ToplamMaaş += j.maasinizNedir();
+
+Console.WriteLine("toplamda " + ToplamMaaş + "tl maaş alıyorlar");
+
 

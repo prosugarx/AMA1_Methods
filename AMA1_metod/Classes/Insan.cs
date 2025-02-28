@@ -12,6 +12,7 @@ namespace AMA1_metod.Classes
         public string surname = "keleş";
         public int age=18;
         public bool gender=false;
+        
 
         public void uyu()
         {

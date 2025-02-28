@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AMA1_Metho
+namespace AMA1_metod.Interfaces
 {
-    internal class Program
+    public interface IOzellik2
     {
-        static void Main(string[] args)
-        {
-        }
+        void dinle(string isim);
+
+        void yaz(string isim);
     }
+
+
 }
