@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AMA1_metod.Classes;
 using AMA1_metod.ŞirketÇalışanMaaşları;
+using System.Diagnostics;
 
 Console.WriteLine("Hello, World!");
 
@@ -36,14 +37,27 @@ b.ekranaYaz(" ibrahim ", " gökyar ");
 Bmw r = new Bmw();
 r.git("bmw", "x5");
 r.vites("bmw ", "düz vites");
+Console.Write("\n Bmw");
+r.hızlıyım();
+r.uçabilerem();
+r.yüzebilirim();
+
+
 
 Mercedes m = new Mercedes();
 m.git("mercedes", "x1");
 m.vites("mercedes", "otomatik vites");
+Console.Write("\n Mercedes: ");
+m.uçabilerem();
+m.yüzebilirim();
+
 
 Porche t = new Porche();
 t.git("porche", "carrera");
 t.vites("porche ", "otomatik vites");
+Console.Write(" \n Porche");
+t.uçabilerem();
+
 
 AkilliCocuk k = new AkilliCocuk();
 k.name = "hakan ";
@@ -78,6 +92,13 @@ ToplamMaaş += z.maasinizNedir();
 ToplamMaaş += ü.maasinizNedir();
 ToplamMaaş += j.maasinizNedir();
 
-Console.WriteLine("toplamda " + ToplamMaaş + "tl maaş alıyorlar");
+Console.WriteLine("\n toplamda " + ToplamMaaş + "tl maaş alıyorlar");
+
+double ToplamYakıt = 0.0;
+ToplamYakıt += r.ArabaYakıt();
+ToplamYakıt += t.ArabaYakıt();
+ToplamYakıt += m.ArabaYakıt();
+Console.WriteLine("\n toplamda " + ToplamYakıt + "L yakıyorlar");
+
 
 
