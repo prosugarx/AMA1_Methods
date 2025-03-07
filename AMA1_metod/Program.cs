@@ -12,6 +12,8 @@ i.name = "rumeysa";
 i.gender = true;
 i.surname = "varlı0";
 i.uyu();
+Console.WriteLine("yaşınız: " + i.yaşBulma(2005));
+i.YaşDurum(20);
 
 Araba a = new Araba();
 a.CarName = "Broadway";
@@ -101,4 +103,26 @@ ToplamYakıt += m.ArabaYakıt();
 Console.WriteLine("\n toplamda " + ToplamYakıt + "L yakıyorlar");
 
 
+string[] gunler = new string[7];
+gunler[0] = "pazartesi";
+gunler[1] = "salı";
+gunler[2] = "çarşamba";
+gunler[3] = "perşembe";
+gunler[4] = "cuma";
+gunler[5] = "cumartesi";
+gunler[6] = "pazar";
+
+int[] sayilar = { 3, 5, 6, 7, 85, 154, 86, 5, 46, 15, 489, 96, 154 };
+for(int q =0; q<gunler.Length; q++)
+{
+    Console.WriteLine(gunler[q]);
+    
+}
+int toplam = 0;
+for(int q =0; q<sayilar.Length; q++)
+{
+    toplam += sayilar[q];
+    
+}
+Console.WriteLine("sayılar dizisinin elemanları toplamı: "+ toplam);
 

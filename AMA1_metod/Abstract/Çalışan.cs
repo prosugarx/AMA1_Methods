@@ -20,6 +20,7 @@ namespace AMA1_metod.Abstract
             {
                 Console.WriteLine(isim + " mesaiye başladı");
             }
+
         
     }
 }
