@@ -20,7 +20,7 @@ namespace AMA1_metod.Classes
         }
         public void ekranaYaz(string name, string surname)
         {
-            Console.WriteLine("kişinim adı: " + name + "soyadı : " + surname);
+            Console.WriteLine("\nkişinim adı: " + name + "soyadı : " + surname);
         }
         public int yaşBulma(int yıl)
         {

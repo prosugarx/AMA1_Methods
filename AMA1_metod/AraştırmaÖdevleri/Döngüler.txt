@@ -1,0 +1,6 @@
+﻿While= döngüye girmeden önce bir koşulu kontrol eder. Eğer koşul sağlanıyorsa döngü çalışmaya başlar.
+Eğer koşul baştan yanlışsa döngü hiç çalışmaz.
+
+
+Do-While =döngüye girmeden önce bir koşulu kontrol eder. Eğer koşul sağlanıyorsa döngü çalışmaya başlar. 
+Eğer koşul baştan yanlışsa döngü hiç çalışmaz.

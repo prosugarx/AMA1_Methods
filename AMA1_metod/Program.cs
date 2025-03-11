@@ -16,12 +16,13 @@ Console.WriteLine("yaşınız: " + i.yaşBulma(2005));
 i.YaşDurum(20);
 
 Araba a = new Araba();
-a.CarName = "Broadway";
+a.CarName = "\nBroadway";
 a.Color = "mavi";
 a.backBagaj = true;
 a.DoorAccount = 4;
 a.git("Broadway"," medine ");
 a.git("Porche ", "911 ");
+a.arabaYaşı(12);
 
 Anne an = new Anne();
 an.name = " fahriye ";
