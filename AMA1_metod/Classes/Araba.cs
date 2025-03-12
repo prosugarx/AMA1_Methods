@@ -8,11 +8,30 @@ namespace AMA1_metod.Classes
 {
     public class Araba
     {
-        public string CarName = "Porche 911";
+        //public string CarName;
+        public int yas;
         public string model = "911";
         public string Color = "Purple";
         public int DoorAccount = 2;
         public bool backBagaj = false;
+       // public double BenzinTüketimi;
+
+
+        
+        public string CarName { get; set; } 
+        public double BenzinTüketimi { get; set; }
+
+
+        public  Araba(string CarName, double BenzinTüketimi)
+        {
+            CarName = CarName;
+            BenzinTüketimi = BenzinTüketimi;
+
+        }
+
+        public Araba()//bunun olayını anlamadım arabadan nesne türetirken hata veriyordu bu gelince düzeldi?
+        {
+        }
 
         public void git(string carname, string model)
         {
@@ -49,5 +68,8 @@ namespace AMA1_metod.Classes
             return durum;
 
         }
+        
+
+
     }
 }

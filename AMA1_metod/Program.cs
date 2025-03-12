@@ -1,7 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using AMA1_metod.Abstract;
 using AMA1_metod.Classes;
 using AMA1_metod.ŞirketÇalışanMaaşları;
 using System.Diagnostics;
+using static AMA1_metod.Classes.Calısans;
 
 Console.WriteLine("Hello, World!");
 
@@ -23,6 +25,7 @@ a.DoorAccount = 4;
 a.git("Broadway"," medine ");
 a.git("Porche ", "911 ");
 a.arabaYaşı(12);
+
 
 Anne an = new Anne();
 an.name = " fahriye ";
@@ -126,4 +129,47 @@ for(int q =0; q<sayilar.Length; q++)
     
 }
 Console.WriteLine("sayılar dizisinin elemanları toplamı: "+ toplam);
+
+
+
+//Tür belirtmek için köşeli parantezler (<>) kullanılır.
+//Bu sayede, listeye yalnızca Araba nesneleri eklenebilir.
+//foreach çalış
+
+List<Araba> arabalar = new List<Araba>
+{
+    new Araba { CarName = "BMW", BenzinTüketimi = 6.6 },
+    new Araba { CarName = "Mercedes", BenzinTüketimi = 7.5 },
+    new Araba { CarName = "Porche", BenzinTüketimi = 5.9 }
+};
+
+double ToplamYakıts = 0.0;
+foreach (var arabas in arabalar)
+{
+    Console.WriteLine($"Araba:{arabas.CarName}, BenzinTüketimi:{arabas.BenzinTüketimi}");
+    ToplamYakıts += arabas.BenzinTüketimi;
+}
+
+Console.WriteLine("\n toplamda " + ToplamYakıts + "L yakıyorlar");
+
+
+
+
+List<Calisans> calisanlar = new List<Calisans>
+{
+    new Calisans("Ali Yılmaz", 15000, "Genel Müdür", "Yönetim"),
+    new Calisans("Ayşe Kara", 12000, "Müdür", "Pazarlama"),
+    new Calisans ("Mehmet Demir",8000, "Programcı","IT" ),
+    new Calisans ( "Elif Çelik", 3000, "Stajyer", "Muhasebe" )
+};
+
+double ToplamMaaşs = 0.0;
+foreach (var calisan in calisanlar)
+{
+    Console.WriteLine($"AdıSoyadı: {calisan.AdiSoyadi}, Mesleği: {calisan.Meslegi}, Maaşı: {calisan.Maas}, Departmanı: {calisan.Departmani}");
+    ToplamMaaşs += calisan.Maas;
+}
+
+Console.WriteLine("\n toplamda " + ToplamMaaşs + "TL");
+
 

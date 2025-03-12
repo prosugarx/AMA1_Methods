@@ -2,5 +2,13 @@
 Eğer koşul baştan yanlışsa döngü hiç çalışmaz.
 
 
-Do-While =döngüye girmeden önce bir koşulu kontrol eder. Eğer koşul sağlanıyorsa döngü çalışmaya başlar. 
+Do-While = döngüye girmeden önce bir koşulu kontrol eder. Eğer koşul sağlanıyorsa döngü çalışmaya başlar. 
 Eğer koşul baştan yanlışsa döngü hiç çalışmaz.
+
+Foreach döngüsü= listeler, diziler gibi üzerinde işlem yapmak için sıkça kullanılan bir döngü yapısıdır
+foreach (var eleman in koleksiyon)
+{
+    Her bir eleman üzerinde yapılacak işlemler
+}
+
+switch case= Bir değişkenin değerine bağlı olarak belirli bir kod bloğunu çalıştırmak için kullanılır.

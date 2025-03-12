@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AMA1_metod.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,10 @@ namespace AMA1_metod.Abstract
         //1. abstract class ların nesnesi oluşturulamaz
         //2. kendisinden türeyen classları eğer abstract class içinde normal metodların dışında
         //abstract keyword ile tanımlanmış bir metod varsa o metodu yazmak zorundadırlar.
-        
 
-            public abstract double maasinizNedir();
+
+
+        public abstract double maasinizNedir();
 
             public void mesaiyeBasla(string isim)
             {
