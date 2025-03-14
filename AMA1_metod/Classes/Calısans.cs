@@ -22,6 +22,11 @@ namespace AMA1_metod.Classes
                 Meslegi = meslegi;
                 Departmani = departmani;
             }
+
+            public void Göster()
+            {
+                Console.WriteLine("adı soyadı: " + AdiSoyadi + " Mesleği: " + Meslegi + " departmanı: " + Departmani + " maası: "+ Maas);
+            }
         }
 
     }

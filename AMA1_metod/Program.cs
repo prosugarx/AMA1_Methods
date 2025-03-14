@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AMA1_metod.Abstract;
 using AMA1_metod.Classes;
+using AMA1_metod.Composition;
+using AMA1_metod.Constructor;
 using AMA1_metod.ŞirketÇalışanMaaşları;
 using System.Diagnostics;
 using static AMA1_metod.Classes.Calısans;
@@ -24,7 +26,16 @@ a.backBagaj = true;
 a.DoorAccount = 4;
 a.git("Broadway"," medine ");
 a.git("Porche ", "911 ");
-a.arabaYaşı(12);
+a.arabaYaşı(12);//ÖDEV2
+
+
+Pencere pencere =new Pencere(4);
+Kapı kapı =new Kapı(4);
+Fiyat fiyat = new Fiyat(2000000);//burada virgül koydurtmuyor neden?
+Marka marka = new Marka("Bmw x5");
+Kasa kasa =new Kasa("sedan",fiyat,kapı,pencere,marka);
+YeniAraba araba = new YeniAraba(kasa);
+araba.yazdır();
 
 
 Anne an = new Anne();
@@ -131,7 +142,7 @@ for(int q =0; q<sayilar.Length; q++)
 Console.WriteLine("sayılar dizisinin elemanları toplamı: "+ toplam);
 
 
-
+//ÖDEV5
 //Tür belirtmek için köşeli parantezler (<>) kullanılır.
 //Bu sayede, listeye yalnızca Araba nesneleri eklenebilir.
 //foreach çalış
@@ -153,10 +164,11 @@ foreach (var arabas in arabalar)
 Console.WriteLine("\n toplamda " + ToplamYakıts + "L yakıyorlar");
 
 
-
+//ÖDEV4
 
 List<Calisans> calisanlar = new List<Calisans>
 {
+
     new Calisans("Ali Yılmaz", 15000, "Genel Müdür", "Yönetim"),
     new Calisans("Ayşe Kara", 12000, "Müdür", "Pazarlama"),
     new Calisans ("Mehmet Demir",8000, "Programcı","IT" ),
@@ -171,5 +183,15 @@ foreach (var calisan in calisanlar)
 }
 
 Console.WriteLine("\n toplamda " + ToplamMaaşs + "TL");
+
+Kulak kulak=new Kulak("kepçe");
+Burun burun =new Burun( "badem");
+Goz göz =new Goz("eşek");
+Kafa kafa = new Kafa(göz,kulak,burun);
+Yeniİnsan yeni = new Yeniİnsan(kafa, "kenan", "yıldız");
+yeni.randevuKaydet();
+
+
+
 
 

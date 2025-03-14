@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AMA1_metod.Constructor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace AMA1_metod.Classes
 {
+       
     public class Araba
     {
+       
+
         //public string CarName;
         public int yas;
         public string model = "911";
@@ -68,6 +72,10 @@ namespace AMA1_metod.Classes
             return durum;
 
         }
+
+       
+
+
         
 
 
