@@ -193,5 +193,9 @@ yeni.randevuKaydet();
 
 
 
-
+Matematik mat = new Matematik();
+Console.WriteLine( mat.Topla(5, 5));
+Console.WriteLine(mat.Topla(5, 5,5));
+Console.WriteLine(mat.Carp(5,5));
+Console.WriteLine(mat.Carp(5,5,5));
 

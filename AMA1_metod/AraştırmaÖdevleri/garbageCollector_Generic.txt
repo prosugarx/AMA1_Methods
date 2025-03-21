@@ -1,0 +1,20 @@
+﻿Garbage Collector, gereksiz nesneleri otomatik olarak bellekten temizler.
+
+Managed Heap üzerinde çalışır ve kullanılmayan nesneleri algılayarak bellek sızıntılarını önler.
+
+class Program {
+    static void Main(string[] args) {
+        string data = new string('a', 10000); // Büyük bir dize oluştur
+        data = null; // Referansı kaldır
+        GC.Collect(); // Garbage Collector'u elle çağır
+        Console.WriteLine("Garbage Collector çalıştırıldı.");
+    }
+}
+
+
+
+Derleme sırasında hata yakalama olasılığı artar, çünkü yalnızca belirtilen türde verilerle çalışır.
+Boxing ve Unboxing gereksinimini ortadan kaldırarak çalışma zamanı maliyetini azaltır.
+Farklı türlerle çalışabilen genel bir yapı sağlar. Tek bir generic sınıf veya metod, çok sayıda tip için kullanılabilir.
+Generic sınıflar ve metotlar, tek bir kod parçasının farklı veri türleriyle çalışmasını sağlar.
+Generic yapılar; esnek, tip güvenliği sağlayan ve performanslı kod yazmayı destekler. Boxing ve Unboxing işlemleri ise veri tipleri arasında dönüştürme maliyeti yaratarak, genericlerin önemini daha da vurgular.
