@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more informationo
 using AMA1_metod.Abstract;
 using AMA1_metod.Classes;
 using AMA1_metod.Composition;
