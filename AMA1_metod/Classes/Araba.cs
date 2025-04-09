@@ -22,7 +22,8 @@ namespace AMA1_metod.Classes
 
 
         
-        public string CarName { get; set; } 
+        public string CarName { get; set; }
+
         public double BenzinTüketimi { get; set; }
 
 
@@ -30,6 +31,7 @@ namespace AMA1_metod.Classes
         {
             CarName = CarName;
             BenzinTüketimi = BenzinTüketimi;
+           
 
         }
 

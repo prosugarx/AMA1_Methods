@@ -3,9 +3,12 @@ using AMA1_metod.Abstract;
 using AMA1_metod.Classes;
 using AMA1_metod.Composition;
 using AMA1_metod.Constructor;
+using AMA1_metod.GenericClass;
 using AMA1_metod.ŞirketÇalışanMaaşları;
+using System.Collections;
 using System.Diagnostics;
 using static AMA1_metod.Classes.Calısans;
+
 
 Console.WriteLine("Hello, World!");
 
@@ -198,4 +201,81 @@ Console.WriteLine( mat.Topla(5, 5));
 Console.WriteLine(mat.Topla(5, 5,5));
 Console.WriteLine(mat.Carp(5,5));
 Console.WriteLine(mat.Carp(5,5,5));
+
+
+
+ArrayList list = new ArrayList();
+list.Add("rumeysa");
+list.Add(55);
+list.Add(i);
+list.Add("nispi");
+YeniArrayList y = new YeniArrayList();
+y.arayaEkle("melankoli");
+list.Remove("nispi");
+list.Insert(2, "kıno");
+
+for(int ö=0;ö<list.Count;ö++)
+{
+    Console.WriteLine(list[ö]);
+}
+if (list.Contains("rumeysa"))
+{
+    Console.WriteLine("aradığınız kişi var");
+}
+else
+{
+    Console.WriteLine("aradığınız kişi yok");
+}
+
+
+
+List<string> genericListe = new List<string>();
+genericListe.Add("rumeysa");
+genericListe.Add("nispi");
+//genericListe.Add(5); hata verir
+
+foreach (string str in genericListe)
+{ 
+    Console.WriteLine(str);
+}
+
+List<GenericAraba> arabalarım = new List<GenericAraba>();
+
+arabalarım.Add(new GenericAraba
+{
+    Marka = "Toyota",
+    Model = "Corolla",
+    FuelConsumption = 6.5,
+    TotalDistance = 5000
+});
+
+arabalarım.Add(new GenericAraba
+{
+    Marka = "BMW",
+    Model = "X5",
+    FuelConsumption = 9.0,
+    TotalDistance = 5000
+});
+
+arabalarım.Add(new GenericAraba
+{
+    Marka = "Mercedes",
+    Model = "C200",
+    FuelConsumption = 8.2,
+    TotalDistance = 5000
+});
+
+
+// Her araba için bilgileri yazdır
+foreach (var ga in arabalarım)
+{
+    double toplamYakit = ga.ArabaYakıt();
+    Console.WriteLine($"Marka: {ga.Marka}, Model: {ga.Model}, 100 km'de Yaktığı Yakıt: {ga.FuelConsumption} litre, Toplam Yakıt Tüketimi: {toplamYakit} litre");
+}
+
+
+
+
+
+
 

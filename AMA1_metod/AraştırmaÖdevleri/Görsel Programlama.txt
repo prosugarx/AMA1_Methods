@@ -1,0 +1,7 @@
+﻿Görsel programlama, bir yazılım geliştirme yöntemidir ve metin tabanlı programlamanın aksine,
+kodlama sürecini grafiksel semboller, bloklar veya diyagramlar aracılığıyla gerçekleştirir.
+Bu yöntemde, kullanıcılar sürükle-bırak yöntemi ile işlemler oluşturur ve görsel araçlarla kodun işleyişini takip eder.
+Metin tabanlı programlamadan farkları:
+Metin yazmadan, görsel bileşenler kullanılarak işlem yapılır.
+Programlama mantığını anlamaya yardımcı olduğu için yeni başlayanlara yöneliktir
+Görsel geri bildirim ile hata bulmak ve düzeltmek daha kolaydır.

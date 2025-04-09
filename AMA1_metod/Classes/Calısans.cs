@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AMA1_metod.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace AMA1_metod.Classes
 {
     public class Calısans
     {
+       
         public class Calisans
         {
             public string AdiSoyadi { get; set; }
