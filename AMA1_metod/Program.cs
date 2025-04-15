@@ -4,6 +4,7 @@ using AMA1_metod.Classes;
 using AMA1_metod.Composition;
 using AMA1_metod.Constructor;
 using AMA1_metod.GenericClass;
+using AMA1_metod.Generics;
 using AMA1_metod.ŞirketÇalışanMaaşları;
 using System.Collections;
 using System.Diagnostics;
@@ -274,7 +275,19 @@ foreach (var ga in arabalarım)
 }
 
 
+Person person = new Person();
+person.Name = "rumeysa";
+//person.save(person);
 
+Product product = new Product();
+product.Name = "bilgisyar";
+//product.save(product);
+ GenericMetodÖrnek gmö = new GenericMetodÖrnek();
+gmö.save(product);
+gmö.save(person);
+
+GenericClassÖrnek<Person> gmöm = new GenericClassÖrnek<Person>();
+gmöm.save(person);
 
 
 

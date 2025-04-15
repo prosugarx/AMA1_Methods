@@ -8,10 +8,8 @@ namespace AMA1_metod.Interfaces
 {
     public interface IYakıt
     {
-        public void YakıtTüketimiHesaplama(double yakıt)
-        {
+        public void YakıtTüketimiHesaplama(double yakıt);
 
-        }
         
     }
 }
